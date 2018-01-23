@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//declaring a function creates a new function
+	// ex: void Start() {lines of code}
+//this function can contain lines of code which causes the program to do something
+//function calls cause the function to run
+	//print("something")
+//A class is like a box and can contain functions
+	//public class Comments : MonoBehaviour { void Start() {...}}
+//functions can also contain more functions and function calls
+
+public class Comments : MonoBehaviour {
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+}
