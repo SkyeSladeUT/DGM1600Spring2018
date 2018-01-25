@@ -1,25 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Animal : MonoBehaviour {
 
-	// Use this for initialization
-	//this is declaring what start will do
-	void Start () {
-		//This is calling print
-		print("My animal is eating.");
-		print("Now my animal is sleeping.");
-		print("I love my cat.");
-	}
+	public string Name;
+	public int FoodCount;
+	public Text myUIText;
 	
 	void OnMouseDown()
 	{
-		print("Meow.");
+		if (FoodCount >= 0) {
+			myUIText.text = "The " + Name + " ate food. \nThe " + Name + " has " + FoodCount + " amount of food left.";
+			FoodCount -= 1;
+		}
+
+		if ((FoodCount < 0) && (FoodCount >=-5)) {
+			print("The " + Name + " is starving.");
+			FoodCount -= 1;
+		}
+
+		if (FoodCount < -5) {
+			print("The " + Name + " is dead.");
+		}
+
 	}
-	// Update is called once per frame
-	void Update () {
+		void Update () {
 		
 	}
 }
