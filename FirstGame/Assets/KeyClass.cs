@@ -11,6 +11,11 @@ public class KeyClass : MonoBehaviour {
 	public Text myUIText;
 	public int x;
 	public int y;
+
+	void Start()
+	{
+		
+	}
 	void OnMouseDown()
 	{
 		//if statements will run if the argument inside it is true
@@ -19,15 +24,15 @@ public class KeyClass : MonoBehaviour {
 			myUIText.text = "Open Door";
 		}
 		// if key is false and ax is true the text will change
-		if((Key == false) && (Ax == true)) {
+		else if(Ax == true) {
 			myUIText.text = "Chop down the door";
 		}
 		//if both key and ax are false and karatemaster is true then the text will change
-		if((Key == false) && (Ax == false) && (KarateMaster == true)) {
+		else if(KarateMaster == true) {
 			myUIText.text = "Kick down the door";
 		}
 		//if all three are false then this will print
-		if((Key == false) && (Ax = false) && (KarateMaster == false)) {
+		else {
 			myUIText.text = "You cannot open the door.";
 		}
 		//since 3 + 1 is always 4 this will always print hooray
@@ -55,6 +60,10 @@ public class KeyClass : MonoBehaviour {
 			print("You did it!");
 		}
 
+	}
+	void Update()
+	{
+		
 	}
 
 

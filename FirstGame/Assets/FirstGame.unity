@@ -219,7 +219,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 0
   Ax: 1
+  KarateMaster: 0
   myUIText: {fileID: 1147461128}
+  x: 0
+  y: 0
 --- !u!1 &738776423
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +634,7 @@ GameObject:
   - component: {fileID: 1947623498}
   - component: {fileID: 1947623502}
   - component: {fileID: 1947623497}
+  - component: {fileID: 1947623503}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -651,7 +655,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Key: 0
   Ax: 0
+  KarateMaster: 0
   myUIText: {fileID: 1147461128}
+  x: 0
+  y: 0
 --- !u!23 &1947623498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -730,3 +737,17 @@ MonoBehaviour:
   Name: Cat
   FoodCount: 5
   myUIText: {fileID: 1147461128}
+--- !u!114 &1947623503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947623496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01b22a008016eb40be52299924c2638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Key: 0
+  Health: 100
+  Password: OU812
