@@ -10,7 +10,9 @@ using UnityEngine;
 //A class is like a box and can contain functions
 	//public class Comments : MonoBehaviour { void Start() {...}}
 //functions can also contain more functions and function calls
-
+//Class is an object classification
+//You must have open and closed {} per object
+//void is a function that is void or empty or null
 public class Comments : MonoBehaviour {
 
 	// Use this for initialization

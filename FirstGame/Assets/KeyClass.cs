@@ -36,7 +36,7 @@ public class KeyClass : MonoBehaviour {
 			myUIText.text = "You cannot open the door.";
 		}
 		//since 3 + 1 is always 4 this will always print hooray
-		if(3 + 1 == 4) {
+		/*if(3 + 1 == 4) {
 			print("Hooray");
 		}
 		//since 3 + 1 is never 5 then this will never print
@@ -58,7 +58,7 @@ public class KeyClass : MonoBehaviour {
 		//this will always print because it is always true
 		if(!false) {
 			print("You did it!");
-		}
+		}*/
 
 	}
 	void Update()
