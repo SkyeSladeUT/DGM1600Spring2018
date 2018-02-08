@@ -24,4 +24,10 @@ public class Comments : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	//When something runs into something else
+	void OnTriggerEnter(Collider other)
+	{
+		
+	}
 }

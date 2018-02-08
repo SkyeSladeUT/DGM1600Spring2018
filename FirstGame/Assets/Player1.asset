@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75d68523a6524ad4e84f668815a7003a, type: 3}
-  m_Name: Health
+  m_Script: {fileID: 11500000, guid: 87947d826986f6e47851bd17d641c7fe, type: 3}
+  m_Name: Player1
   m_EditorClassIdentifier: 
-  PowerLevel: 100
-  Name: Health
+  Score: 0
