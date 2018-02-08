@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Big
   m_EditorClassIdentifier: 
   PowerLevel: 10
+  CurrentPlayer: {fileID: 11400000, guid: 7e49f026368a8d5429487f2f0b774de5, type: 2}
