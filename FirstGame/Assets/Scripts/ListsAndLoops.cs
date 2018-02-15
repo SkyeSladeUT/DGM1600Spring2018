@@ -13,6 +13,16 @@ public class ListsAndLoops : MonoBehaviour {
 	//used for collecting things
 	//can be changed within the game
 	public List<string> PlayerNameList;
+	//lists can contain any type of variable of the same kind
+	public List<int> Scores;
+	public List<double> multipliers;
+	public List<int> HighScores;
+	public List<string> Objects;
+	public List<string> tools;
+	public List<int> randomNumbers;
+	public List<string> UserNames;
+	public List<string> Passwords;
+	public List<float> randomMultipliers;
 	public TheIncredibles TheIncredibles;
 	public Text AddMember;
 
