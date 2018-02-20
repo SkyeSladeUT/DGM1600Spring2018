@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75d68523a6524ad4e84f668815a7003a, type: 3}
-  m_Name: Small
+  m_Script: {fileID: 11500000, guid: 6ed3be564e36c094e81dec9578d0b373, type: 3}
+  m_Name: Ammo
   m_EditorClassIdentifier: 
-  PowerLevel: 10
-  CurrentPlayer: {fileID: 11400000, guid: 7e49f026368a8d5429487f2f0b774de5, type: 2}
+  PowerLevel: 0
+  ExtraPower: 0

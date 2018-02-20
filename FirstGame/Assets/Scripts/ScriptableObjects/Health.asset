@@ -8,9 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87947d826986f6e47851bd17d641c7fe, type: 3}
-  m_Name: Player3
+  m_Script: {fileID: 11500000, guid: 67711d8c7f9dc6448a528ceec04913cd, type: 3}
+  m_Name: Health
   m_EditorClassIdentifier: 
-  Score: 4000
-  PlayerName: ManOfSteel
-  MPs: 50
+  PowerLevel: 0

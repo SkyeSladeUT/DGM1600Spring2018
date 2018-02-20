@@ -119,9 +119,8 @@ GameObject:
   - component: {fileID: 194690594}
   - component: {fileID: 194690593}
   - component: {fileID: 194690592}
+  - component: {fileID: 194690598}
   - component: {fileID: 194690591}
-  - component: {fileID: 194690596}
-  - component: {fileID: 194690597}
   m_Layer: 0
   m_Name: PowerUp
   m_TagString: Untagged
@@ -137,10 +136,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 194690590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df853c8ba0414b04992bfaf28027e734, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fb5a0dcb8042394c895e3638c10e23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyPowerUp: {fileID: 11400000, guid: 8479c48bd6ede4d489759c2b3bf88562, type: 2}
+  MyPowerUp: {fileID: 11400000, guid: 8db4a354c6329d94ba674b7c16dd0bb2, type: 2}
 --- !u!23 &194690592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -205,7 +204,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &194690596
+--- !u!114 &194690598
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -213,47 +212,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 194690590}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdb1d347421926b49aece95b05cf425d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bd57aba9b4e9a84c9b350b2809600a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNames: []
-  HighScores: dc0500002e050000d2040000e8030000e703000056030000f4020000eb0000006400000037000000
-  PowerUps:
-  - {fileID: 11400000, guid: f39b2352b36bd6c4c801d3b556c2088b, type: 2}
-  - {fileID: 11400000, guid: dab74f5969ab2a7499350249e8ef1434, type: 2}
-  - {fileID: 11400000, guid: 746d1d7b24029774e98fc03de7c29f89, type: 2}
-  Scores: 
-  UserNames: []
-  Passwords: []
-  RandomNums: 
-  Players:
-  - {fileID: 11400000, guid: 7e49f026368a8d5429487f2f0b774de5, type: 2}
-  - {fileID: 11400000, guid: 8cdd51515fbb0b645b4c727896688abf, type: 2}
-  - {fileID: 11400000, guid: 30b5f6b42e168ef4f8fe12899c1c989f, type: 2}
-  - {fileID: 11400000, guid: a20a7825fbbe2d248bb7e88532fc56bc, type: 2}
-  RandomDecimals: []
-  keyWords: []
---- !u!114 &194690597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 194690590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f36c5f5ce3f1d439baa07d38d75eef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerNames:
-  - Bob
-  - Helen
-  - Violet
-  PlayerNameList:
-  - Bob
-  - Helen
-  - Violet
-  TheIncredibles: {fileID: 11400000, guid: 5fc3466b31a23cc488dca8bd6c2b1167, type: 2}
-  AddMember: {fileID: 0}
+  UserName: Password
 --- !u!1 &247080311
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +476,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerNames: []
   PlayerNameList: []
+  Scores: 
+  multipliers: []
+  HighScores: 
+  Objects: []
+  tools: []
+  randomNumbers: 
+  UserNames: []
+  Passwords: []
+  randomMultipliers: []
   TheIncredibles: {fileID: 11400000, guid: 5fc3466b31a23cc488dca8bd6c2b1167, type: 2}
   AddMember: {fileID: 1533174407}
 --- !u!23 &388306851

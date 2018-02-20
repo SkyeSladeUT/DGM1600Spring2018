@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ArraysAndLoops : MonoBehaviour {
-
+/*
     //arrays are objects which contain lists of elements
     //[] makes the variable into an array
     //arrays can have many different types such as double, int, string, scriptable objects, etc.
@@ -42,5 +42,5 @@ public class ArraysAndLoops : MonoBehaviour {
             print("Score: " + player.Score);
             print("MPs " + player.MPs);
         }
-    }
+    }*/
 }
