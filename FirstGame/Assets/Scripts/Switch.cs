@@ -29,6 +29,30 @@ public class Switch : MonoBehaviour {
 			case "BlackPanther":
 				print("Made over 200 million this weekend");
 				break;
+
+			case "SecretCode":
+				print("You unlocked the secret");
+				break;
+
+			case "PowerUp":
+				print("You got a power boost");
+				break;
+			
+			case "GameOver":
+				print("Game Over");
+				break;
+
+			case "Start": 
+				print("The game has started");
+				break;
+			
+			case "Winner":
+				print("You are the Winner");
+				break;
+			
+			case "Loser":
+				print("You Lost the Game");
+				break;
 			
 			//if none of the other branches are taken then this will run
 			default:
