@@ -15,7 +15,8 @@ for loops can often be converted into foreach loops*/
 	public string[] Keys;
 	private int i;
 	private int health;
-
+	public int MaxSize;
+	public int Ammo;
 	void Start () {
 		for(i = 0; i < Names.Length; i++) {
 			print(Names[i]);
@@ -26,15 +27,34 @@ for loops can often be converted into foreach loops*/
 		}
 		for(health = 0; i < Keys.Length; health++){
 			if(Keys[i] == "Add Ammo") {
-				print(Keys[i]);
+				Ammo += 10;
 			}
+			if(Keys[i] == "Add Health") {
+				health += 10;
+			}
+		}
+		for(health = 100; health > 0; health -= 10) {
+			print("Health: " + health);
 		}
 		//function call
 		run();
 	}
-//void functions return no value
+//void functions return no value but can do work
 //function declaration
 	void run() {
+		for(i = 0; i < MaxSize; i++) {
+			print(i);
+		}
+	}
+	//this is a built in function for a monobehaviour [so is start]
+	void Update()
+	{
 		//do work
+	}
+	void Move() {
+		//move character
+	}
+	void Jump() {
+		//make character jump
 	}
 }
