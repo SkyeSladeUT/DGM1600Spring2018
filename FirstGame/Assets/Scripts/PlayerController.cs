@@ -8,9 +8,14 @@ public class PlayerController : MonoBehaviour {
 	public float jumpSpeed;
 	public float sideSpeed;
 	public int PlayerNum;
+	private bool isGrounded;
+	private int jumpCount;
+	public GameObject myObject;
 
 	void Start () {
 		RB = GetComponent<Rigidbody>();
+		isGrounded = true;
+		jumpCount = 0;
 	}
 	
 	// Update is called once per frame
@@ -20,13 +25,21 @@ public class PlayerController : MonoBehaviour {
 		Move();
 	}
 	void Jump() {
-		if(Input.GetButtonDown("Vertical" + PlayerNum)) {
-			if (Input.GetAxisRaw("Vertical" + PlayerNum) > 0) {
-				RB.velocity = Vector3.up * jumpSpeed;
+		if(isGrounded || jumpCount < 2){
+			if(Input.GetButtonDown("Vertical" + PlayerNum)) {
+				if (Input.GetAxisRaw("Vertical" + PlayerNum) > 0) {
+					RB.velocity = Vector3.up * jumpSpeed;
+					isGrounded = false;
+					++jumpCount;
+				}
 			}
 		}
 	}
 
+	void OnCollisionEnter(Collision other)
+	{
+		myObject.GetComponent<Ground>().animation 
+	}
 	void Move() {
 		if(Input.GetButton("Horizontal" + PlayerNum)) {
 			if (Input.GetAxisRaw("Horizontal" + PlayerNum) > 0) {
