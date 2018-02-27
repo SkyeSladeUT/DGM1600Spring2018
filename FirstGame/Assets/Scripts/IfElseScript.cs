@@ -57,9 +57,4 @@ public class IfElseScript : MonoBehaviour {
 			print(x + " is not greater than " + y);
 		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

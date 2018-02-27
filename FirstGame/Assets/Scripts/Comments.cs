@@ -15,19 +15,11 @@ using UnityEngine;
 //void is a function that is void or empty or null
 public class Comments : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
+	// Use start for initialization
 	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	//When something runs into something else
-	void OnTriggerEnter(Collider other)
+	/*void OnTriggerEnter(Collider other)
 	{
 		
-	}
+	}*/
 }

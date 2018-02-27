@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public int PlayerNum;
 	private bool isGrounded;
 	private int jumpCount;
-	public GameObject myObject;
+	//public GameObject myObject;
 
 	void Start () {
 		RB = GetComponent<Rigidbody>();
@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		myObject.GetComponent<Ground>().animation 
+		isGrounded = true;
+		jumpCount = 0;
 	}
 	void Move() {
 		if(Input.GetButton("Horizontal" + PlayerNum)) {

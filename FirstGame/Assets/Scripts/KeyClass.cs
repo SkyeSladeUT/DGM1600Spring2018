@@ -61,10 +61,7 @@ public class KeyClass : MonoBehaviour {
 		}*/
 
 	}
-	void Update()
-	{
-		
-	}
+
 
 
 }

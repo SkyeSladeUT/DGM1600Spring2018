@@ -31,7 +31,5 @@ public class Animal : MonoBehaviour {
 		}
 
 	}
-		void Update () {
-		
-	}
+
 }
