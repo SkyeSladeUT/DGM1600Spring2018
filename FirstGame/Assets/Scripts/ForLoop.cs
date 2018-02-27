@@ -7,8 +7,8 @@ public class ForLoop : MonoBehaviour {
 //syntax:
 /*for(integer = STARTING_VALUE; integer < UPPER_LIMIT; interger++ [increment integer]) {
 	//do work
-	//do work
-} */
+} 
+for loops can often be converted into foreach loops*/
 //for loops are used to run through a program a certain number of times
 
 	public string[] Names;
@@ -29,6 +29,12 @@ public class ForLoop : MonoBehaviour {
 				print(Keys[i]);
 			}
 		}
+		//function call
+		run();
 	}
-	
+//void functions return no value
+//function declaration
+	void run() {
+		//do work
+	}
 }
