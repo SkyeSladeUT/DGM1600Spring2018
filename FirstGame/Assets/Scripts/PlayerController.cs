@@ -38,6 +38,11 @@ public class PlayerController : MonoBehaviour {
         isGrounded = true;
         jumpCount = 0;
     }
+
+    void OnCollisionExit(Collision other){
+        isGrounded = false;
+    }
+
     void Move () {
         if (isGrounded) {
             if (Input.GetButton ("Horizontal" + PlayerNum)) {
