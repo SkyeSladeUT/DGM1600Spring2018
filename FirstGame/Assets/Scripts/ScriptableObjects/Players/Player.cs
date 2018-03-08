@@ -6,5 +6,6 @@ public class Player : ScriptableObject {
 
 	public int Health;
 	public string UserName;
+	public int PlayerNum;
 
 }

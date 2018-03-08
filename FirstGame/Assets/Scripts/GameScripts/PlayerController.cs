@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour {
     Rigidbody RB;
     public float jumpSpeed;
     public float sideSpeed;
-    public int PlayerNum;
     private bool isGrounded;
     private int jumpCount;
+    public Player myPlayer;
 
     void Start () {
         RB = GetComponent<Rigidbody> ();
@@ -24,8 +24,8 @@ public class PlayerController : MonoBehaviour {
     }
     void Jump () {
         if (isGrounded || jumpCount < 2) {
-            if (Input.GetButtonDown ("Vertical" + PlayerNum)) {
-                if (Input.GetAxisRaw ("Vertical" + PlayerNum) > 0) {
+            if (Input.GetButtonDown ("Vertical" + myPlayer.PlayerNum)) {
+                if (Input.GetAxisRaw ("Vertical" + myPlayer.PlayerNum) > 0) {
                     RB.velocity = Vector3.up * jumpSpeed;
                     isGrounded = false;
                     ++jumpCount;
@@ -45,16 +45,16 @@ public class PlayerController : MonoBehaviour {
 
     void Move () {
         if (isGrounded) {
-            if (Input.GetButton ("Horizontal" + PlayerNum)) {
-                if (Input.GetAxisRaw ("Horizontal" + PlayerNum) > 0) {
+            if (Input.GetButton ("Horizontal" + myPlayer.PlayerNum)) {
+                if (Input.GetAxisRaw ("Horizontal" + myPlayer.PlayerNum) > 0) {
                     RB.velocity = Vector3.right * sideSpeed;
                 } else {
                     RB.velocity = Vector3.left * sideSpeed;
                 }
             }
         } else {
-            if (Input.GetButtonDown ("Horizontal" + PlayerNum)) {
-                if (Input.GetAxisRaw ("Horizontal" + PlayerNum) > 0) {
+            if (Input.GetButtonDown ("Horizontal" + myPlayer.PlayerNum)) {
+                if (Input.GetAxisRaw ("Horizontal" + myPlayer.PlayerNum) > 0) {
                     RB.velocity = Vector3.right * sideSpeed;
                 } else {
                     RB.velocity = Vector3.left * sideSpeed;

@@ -8,9 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64a338ebd226b2d4894366b85654b031, type: 3}
-  m_Name: Player1
+  m_Script: {fileID: 11500000, guid: eccf51bd9f832624cbba401037a25bd4, type: 3}
+  m_Name: Subtraction
   m_EditorClassIdentifier: 
-  Health: 190
-  UserName: 
-  PlayerNum: 1
+  Operation: '-'
