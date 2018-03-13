@@ -1,26 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu]
-public class Calculation : ScriptableObject {
 
-	public string Operation;
+//abstract means that the class is generic
+//you do not create assets for this class
 
-	public int Calculate(string a, string b) {
+//change to non abstract and parse nums
+public abstract class Calculation : ScriptableObject {
 
-		int anum = int.Parse(a);
-		int bnum = int.Parse(b);
+	public float anum;
+	public float bnum;
 
-		switch (Operation)
-		{
-			case "+":
-				return anum + bnum;
-			case "-":
-				return anum - bnum;
-			case "*":
-				return anum * bnum;
-			default:
-				return 0;
-		}
-	}
+	public abstract float Calculate(string a, string b);
+	//parse the numbers in this function and return FinishCalc()
+//create an abstract definition FinishCalc() and change all the scriptatble objects to have this function instead of Calculate
 }
