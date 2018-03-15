@@ -11,7 +11,7 @@ public class CalculateBehaviour : MonoBehaviour {
 	public Text Solution;
 
 	public void RunCalculation() {
-		Solution.text = Calculation.Calculate(Input1.text, Input2.text).ToString();
+		Solution.text = Calculation.Calculate(Input1.text, Input2.text);
 	}
 
 }
