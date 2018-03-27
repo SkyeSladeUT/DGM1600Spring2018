@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -208,9 +208,9 @@ GameObject:
   - component: {fileID: 988372961}
   - component: {fileID: 988372960}
   - component: {fileID: 988372959}
-  - component: {fileID: 988372963}
   - component: {fileID: 988372965}
   - component: {fileID: 988372964}
+  - component: {fileID: 988372963}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -291,12 +291,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 988372958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 611f52c72df18ab49a9eba50ab16ea5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c0dd938f885f764c9ed8a5a6057227e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
+  myCharacter: {fileID: 11400000, guid: a0a1095c8de26604d8ecee4de7c2bf27, type: 2}
 --- !u!54 &988372964
 Rigidbody:
   m_ObjectHideFlags: 0
