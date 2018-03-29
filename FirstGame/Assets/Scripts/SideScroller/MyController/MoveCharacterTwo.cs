@@ -22,7 +22,7 @@ public class MoveCharacterTwo : MonoBehaviour {
                         myCharacter.moveDirection.y = myCharacter.jumpSpeed;
                 }
                 else{
-                    if(Input.GetButton("Vertical")) {
+                    if(Input.GetAxis("Vertical") > 0) {
                         myCharacter.moveDirection.y = myCharacter.jumpSpeed;
                     }
                 }
