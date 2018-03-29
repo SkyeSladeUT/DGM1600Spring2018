@@ -6,22 +6,27 @@ public class MoveCharacterTwo : MonoBehaviour {
 
 	public Character myCharacter;
     private CharacterController controller;
-
-	private void Start() {
+	void Start() {
 		controller = GetComponent<CharacterController>();
 	}
 
     void Update() {
         if (controller.isGrounded) {
 
-			myCharacter.moveDirection.x = Input.GetAxis("Horizontal");
-			myCharacter.moveDirection.z = Input.GetAxis("Vertical");
-			myCharacter.moveDirection.y = 0;
-
+			myCharacter.ChangePosition(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             myCharacter.moveDirection = transform.TransformDirection(myCharacter.moveDirection);
             myCharacter.moveDirection *= myCharacter.speed;
-            if (Input.GetButton("Jump"))
-                myCharacter.moveDirection.y = myCharacter.jumpSpeed;
+            if(myCharacter.CanJump) {
+                if(myCharacter.UsesSpace) {
+                    if (Input.GetButton("Jump"))
+                        myCharacter.moveDirection.y = myCharacter.jumpSpeed;
+                }
+                else{
+                    if(Input.GetButton("Vertical")) {
+                        myCharacter.moveDirection.y = myCharacter.jumpSpeed;
+                    }
+                }
+            }
         }
 		//Time.deltaTime makes it run in real time rather than every frame
         myCharacter.moveDirection.y -= myCharacter.gravity * Time.deltaTime;

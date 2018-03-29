@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0dd938f885f764c9ed8a5a6057227e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCharacter: {fileID: 11400000, guid: a0a1095c8de26604d8ecee4de7c2bf27, type: 2}
+  myCharacter: {fileID: 11400000, guid: c427faee366ced34f8a7fbd88f1b4ea6, type: 2}
 --- !u!54 &988372964
 Rigidbody:
   m_ObjectHideFlags: 0
