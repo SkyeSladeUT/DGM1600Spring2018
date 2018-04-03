@@ -5,8 +5,7 @@ using UnityEngine;
 public class MoveCharacter : MonoBehaviour {
 
 	private CharacterController controller;
-    public MovePattern MovePattern;
-    
+    public MovePattern MovePattern;   
 
 
 	private void Start() {
@@ -16,5 +15,7 @@ public class MoveCharacter : MonoBehaviour {
     void Update() {
         MovePattern.Move(controller, transform);
     }
+
+
 
 }

@@ -13,6 +13,6 @@ public class PowerUpTrigger : MonoBehaviour {
 
     void AddPower (PowerUp powerUp) {
 		print(powerUp.PowerLevel);
-    MyPlayer.Health += MyPowerUp.PowerLevel;
+    //MyPlayer.Health += MyPowerUp.PowerLevel;
     }
 }

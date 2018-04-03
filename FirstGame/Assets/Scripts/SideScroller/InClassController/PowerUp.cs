@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[CreateAssetMenu]
 public class PowerUp : ScriptableObject {
 
-	public int PowerLevel = 1.5;
+	public float PowerLevel = 2.0F;
+	public string name;
 
 	public float IncreasePower(float n) {
-		n *= PowerLevel;
+		return n*PowerLevel;
+	}
+
+	public float DecreasePower(float n) {
+		return n/PowerLevel;
 	}
 
 }
