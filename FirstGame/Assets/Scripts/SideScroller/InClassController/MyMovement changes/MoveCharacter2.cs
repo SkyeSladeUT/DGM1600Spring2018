@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveCharacter : MonoBehaviour {
+public class MoveCharacter2 : MonoBehaviour {
 
 	private CharacterController controller;
-    public MovePattern MovePattern;
+    public MovePattern2 MovePattern;
     public float StartSpeed = 6.0F;
     public float StartJumpSpeed = 8.0F;
 
@@ -19,7 +19,4 @@ public class MoveCharacter : MonoBehaviour {
     void Update() {
         MovePattern.Move(controller, transform);
     }
-
-
-
 }

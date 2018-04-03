@@ -8,9 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac2cf7aaaeae324dace3b65ed17926e, type: 3}
+  m_Script: {fileID: 11500000, guid: f65dc2db08005a54b9ba4b7dbb96f8df, type: 3}
   m_Name: 2D
   m_EditorClassIdentifier: 
   speed: 6
   jumpSpeed: 8
   gravity: 20
+  InputX: {fileID: 11400000, guid: 4d8b19d84a2569d449226efa56d50dc2, type: 2}
+  InputZ: {fileID: 11400000, guid: a3b74d901374d40488e16c104a0ce861, type: 2}
+  InputY: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}

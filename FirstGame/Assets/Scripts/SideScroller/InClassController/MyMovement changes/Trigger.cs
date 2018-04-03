@@ -6,8 +6,6 @@ public class Trigger : MonoBehaviour {
 
 	public MovePattern MovePattern;
 	public PowerUp MyPowerUp;
-	private float TimeLeft = 0F;
-
     private void OnTriggerEnter(Collider other)
     {
         switch(MyPowerUp.name) {
