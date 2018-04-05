@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f65dc2db08005a54b9ba4b7dbb96f8df, type: 3}
-  m_Name: 2D
+  m_Name: Stop
   m_EditorClassIdentifier: 
   speed: 6
-  jumpSpeed: 10
+  jumpSpeed: 8
   gravity: 20
-  InputX: {fileID: 11400000, guid: 4d8b19d84a2569d449226efa56d50dc2, type: 2}
+  InputX: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   InputZ: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   InputY: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   InputRotateX: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   InputRotateY: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   InputRotateZ: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
-  Jump: {fileID: 11400000, guid: 804206495e6181b44a18be2c6f21a33a, type: 2}
+  Jump: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}

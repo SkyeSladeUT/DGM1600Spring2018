@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger : MonoBehaviour {
+public class Trigger1 : MonoBehaviour {
 
 	public MovePattern MovePattern;
-	public PowerUp MyPowerUp;
+	public PowerUp1 MyPowerUp;
     private void OnTriggerEnter(Collider other)
     {
         switch(MyPowerUp.name) {
