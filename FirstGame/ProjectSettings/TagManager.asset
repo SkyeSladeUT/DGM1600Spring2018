@@ -6,6 +6,8 @@ TagManager:
   tags:
   - speed
   - jump
+  - coin
+  - wall
   layers:
   - Default
   - TransparentFX

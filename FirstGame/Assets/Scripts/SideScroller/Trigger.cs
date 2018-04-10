@@ -8,6 +8,7 @@ public class Trigger : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider obj)
 	{
-		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();	
+		obj.GetComponent<MoveCharacter>().MovePattern = PowerUpTransfer.Transfer();
+		gameObject.SetActive(false);
 	}
 }
