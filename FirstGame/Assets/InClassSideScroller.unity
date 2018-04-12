@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 526661038}
   - component: {fileID: 526661037}
   - component: {fileID: 526661036}
-  - component: {fileID: 526661035}
+  - component: {fileID: 526661040}
   m_Layer: 0
   m_Name: Health
   m_TagString: Untagged
@@ -1535,19 +1535,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &526661035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 526661034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca27b536819c0564eb9526128639c057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpTransfer: {fileID: 0}
-  HealthBar: {fileID: 205787996}
 --- !u!23 &526661036
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1561,7 +1548,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1d54d26e5a1583e49b7c8966546b9991, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1587,7 +1574,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526661034}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1607,11 +1594,24 @@ Transform:
   m_GameObject: {fileID: 526661034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.98, y: 1.13, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.38234848, y: 0.38234845, z: 0.38234845}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &526661040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526661034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca27b536819c0564eb9526128639c057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpTransfer: {fileID: 11400000, guid: 27de9cca5c5f02e40aa460b26fff2e6c, type: 2}
+  HealthBar: {fileID: 205787996}
 --- !u!4 &556183738 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4005707757979992, guid: 96872cf6b788b1049a5612321b3d0776,
@@ -2147,7 +2147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -45, y: -300}
+  m_AnchoredPosition: {x: -24, y: -21}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702411837
@@ -2162,7 +2162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3759,7 +3759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUpTransfer: {fileID: 11400000, guid: 489f392c369cf414ea6c6d720afacf67, type: 2}
-  HealthBar: {fileID: 0}
+  HealthBar: {fileID: 205787996}
 --- !u!23 &1245814051
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5219,7 +5219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca27b536819c0564eb9526128639c057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUpTransfer: {fileID: 11400000, guid: 1edb914dd2ea581429ae2a519d6d953b, type: 2}
+  PowerUpTransfer: {fileID: 11400000, guid: da0bb58402256b641ab8d37169ef1b3e, type: 2}
   HealthBar: {fileID: 205787996}
 --- !u!1001 &1774963240
 Prefab:
