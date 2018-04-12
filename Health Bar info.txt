@@ -1,0 +1,11 @@
+Health Bar
+using UnityEngine.UI
+class Image
+var FillAmount (0-1)
+if(FillAmount > 0) {
+	health -= powerLevel;
+}
+
+
+PowerUp Class
+float powerLevel

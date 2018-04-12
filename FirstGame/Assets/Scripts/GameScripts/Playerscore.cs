@@ -20,7 +20,7 @@ public class Playerscore : MonoBehaviour {
 			player.Score += 100;
 			score.text = "Score: " + player.Score;
 		}
-		if(player.Score == 500) {
+		if(player.Score == 5000) {
 			WinText.text = "You Win!!!!";
 		}
 	}

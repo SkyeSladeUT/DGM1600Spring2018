@@ -1,10 +1,17 @@
 fileFormatVersion: 2
 guid: f65dc2db08005a54b9ba4b7dbb96f8df
-timeCreated: 1522340519
+timeCreated: 1523549524
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - InputX: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - InputZ: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - InputY: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - InputRotateX: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - InputRotateY: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - InputRotateZ: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
+  - Jump: {fileID: 11400000, guid: 25a367795048c6d4295b401ac61ae429, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
