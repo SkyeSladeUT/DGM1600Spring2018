@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: 
   Score: 0
-  numBlueKey: 1
-  numRedKey: 0
-  numYellowKey: 0
+  MovePattern: {fileID: 11400000, guid: 83da3edbb515c3647bec36e197fef64a, type: 2}
