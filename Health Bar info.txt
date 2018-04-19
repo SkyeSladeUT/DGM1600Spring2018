@@ -9,3 +9,10 @@ if(FillAmount > 0) {
 
 PowerUp Class
 float powerLevel
+
+
+enemy
+to go back and forth
+set the transform to an object until it hits the object then changes the transform to another object
+
+turn off mesh renderer to make transparent
