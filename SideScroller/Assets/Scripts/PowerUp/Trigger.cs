@@ -8,6 +8,9 @@ public class Trigger : MonoBehaviour {
 	public PowerUp PowerUpTransfer;
 	public Image HealthBar;
 	public Animator animator;
+	public Player player;
+	private Vector3 SpawnPoint = new Vector3(-4, 0.6f, 0);
+	public MovePattern NormalMove;
 
 
 	private void OnTriggerEnter(Collider obj)
@@ -19,7 +22,9 @@ public class Trigger : MonoBehaviour {
 
 		}
 		if(HealthBar.fillAmount <= 0) {
-			print("You Are Dead");
+			obj.gameObject.transform.position = SpawnPoint;
+			HealthBar.fillAmount = 1.0f;
+			player.MovePattern = NormalMove;
 		}
 		gameObject.SetActive(!PowerUpTransfer.ObjectDestroy);
 	}

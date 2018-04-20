@@ -1,10 +1,15 @@
 fileFormatVersion: 2
 guid: 0385689bed7f01b43bb0318a56279ffb
-timeCreated: 1523565262
+timeCreated: 1524182420
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PowerUpTransfer: {instanceID: 0}
+  - HealthBar: {instanceID: 0}
+  - animator: {instanceID: 0}
+  - player: {instanceID: 0}
+  - NormalMove: {fileID: 11400000, guid: 3609deac81e56064cb1939e84e32dc2f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

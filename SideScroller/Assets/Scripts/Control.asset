@@ -8,10 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d145e3b1f01adba41a684481ce8dc0d3, type: 3}
-  m_Name: DecreaseHealth
+  m_Script: {fileID: 11500000, guid: 38a876925aa694d419f92eb16bdaa5fe, type: 3}
+  m_Name: Control
   m_EditorClassIdentifier: 
-  MovePatternTransfer: {fileID: 11400000, guid: 3609deac81e56064cb1939e84e32dc2f,
-    type: 2}
-  PowerLevel: 0.05
-  ObjectDestroy: 0
+  SceneName: Controls
