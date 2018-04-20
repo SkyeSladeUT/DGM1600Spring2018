@@ -11,6 +11,12 @@ public class Trigger : MonoBehaviour {
 	public Player player;
 	private Vector3 SpawnPoint = new Vector3(-4, 0.6f, 0);
 	public MovePattern NormalMove;
+	public Text Lives;
+
+	private void Start()
+	{
+		Lives.text = "Lives: " + player.NumOfLives;
+	}
 
 
 	private void OnTriggerEnter(Collider obj)
@@ -22,9 +28,15 @@ public class Trigger : MonoBehaviour {
 
 		}
 		if(HealthBar.fillAmount <= 0) {
-			obj.gameObject.transform.position = SpawnPoint;
 			HealthBar.fillAmount = 1.0f;
+			obj.gameObject.transform.position = SpawnPoint;
 			player.MovePattern = NormalMove;
+			player.NumOfLives--;
+			Lives.text = "Lives: " + player.NumOfLives;
+		}
+		if(player.NumOfLives == 0) {
+			animator.SetTrigger("ExitGame");
+			player.GameOver = true;
 		}
 		gameObject.SetActive(!PowerUpTransfer.ObjectDestroy);
 	}

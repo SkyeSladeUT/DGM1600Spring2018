@@ -6,6 +6,9 @@ public class Player : ScriptableObject {
 
 	public int Score;
 	public MovePattern MovePattern;
+	public int NumOfLives = 5;
+	public bool GameOver = false;
+	public bool GameWon = false;
 
 	
 }

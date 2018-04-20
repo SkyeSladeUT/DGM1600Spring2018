@@ -15,6 +15,7 @@ public class MoveCharacter : MonoBehaviour {
         controller = GetComponent<CharacterController> ();
         Player.MovePattern.speed = StartSpeed;
         Player.MovePattern.jumpSpeed = StartJumpSpeed;
+        Player.NumOfLives = 5;
         PlayerCam.enabled = true;
         FullCam.enabled = false;
     }
@@ -34,6 +35,4 @@ public class MoveCharacter : MonoBehaviour {
             FullCam.enabled = false;
         }
     }
-
-
 }

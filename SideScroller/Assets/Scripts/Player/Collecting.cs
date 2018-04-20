@@ -7,7 +7,6 @@ public class Collecting : MonoBehaviour {
 
 	public Player player;
 	public Text scoreText;
-	public Text WinText;
 	public int winScore;
 	public Animator animator;
 
@@ -26,12 +25,16 @@ public class Collecting : MonoBehaviour {
 				Destroy(other.gameObject);
 				player.Score += 500;
 				break;
+			case "life":
+				Destroy(other.gameObject);
+				player.NumOfLives ++;
+				break;
 			default:
 				break;
 		}
 		scoreText.text = "Score: " + player.Score;
 		if(player.Score == winScore) {
-			WinText.text = "You Win!!!!";
+			player.GameWon = true;
 			animator.SetTrigger("ExitGame");
 		}
 	}
