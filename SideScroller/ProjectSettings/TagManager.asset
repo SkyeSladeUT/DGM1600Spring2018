@@ -6,6 +6,8 @@ TagManager:
   tags:
   - coin
   - gem
+  - health
+  - life
   layers:
   - Default
   - TransparentFX

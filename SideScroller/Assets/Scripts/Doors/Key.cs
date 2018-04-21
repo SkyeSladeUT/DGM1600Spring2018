@@ -9,16 +9,19 @@ public class Key : MonoBehaviour {
 	private Animation animate;
 	public ButtonScript button;
 	private bool isButtonActive;
+	private AudioSource buttonNoise;
 
 
 	private void Start () {
 		animate = gameObject.GetComponent<Animation> ();
+		buttonNoise = gameObject.GetComponent<AudioSource> ();
 		foreach (var door in Door2) {
 			door.SetActive (false);
 		}
 
 	}
 	private void OnTriggerEnter (Collider other) {
+		buttonNoise.Play();
 		if(isButtonActive)
 			animate.Play("On");
 		else
@@ -32,14 +35,4 @@ public class Key : MonoBehaviour {
 		button.CurrentButtonActive = !button.CurrentButtonActive;
 		isButtonActive = !isButtonActive;
 	}
-	/*private void OnTriggerStay(Collider other)
-	{
-		foreach (var door in Door1) {
-			door.SetActive (!button.CurrentButtonActive);
-		}
-		foreach (var door in Door2) {
-			door.SetActive (button.CurrentButtonActive);
-		}
-		button.CurrentButtonActive = !button.CurrentButtonActive;
-	}*/
 }
