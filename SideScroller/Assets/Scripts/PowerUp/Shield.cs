@@ -4,31 +4,28 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour {
 
-	public int ShieldPower;
-	private bool isHit;
+    public int ShieldPower;
+    private bool isHit;
 
-	void Start() {
-		ShieldPower = 0;
-		isHit = false;
-	}
+    void Start () {
+        ShieldPower = 0;
+        isHit = false;
+    }
 
-	private void Update()
-	{
-		while(ShieldPower > 0) {
-			if(isHit) {
+    private void Update () {
+        if (ShieldPower > 0) {
+            if (isHit) {
 				ShieldPower--;
-			}
-		}
-	}
-	 private void OnTriggerEnter(Collider other)
-	{
-		if(other.tag == "shield") {
-			ShieldPower += 5;
+            }
+        }
+    }
+    private void OnTriggerEnter (Collider other) {
+        if (other.tag == "shield") {
+            ShieldPower += 5;
 
-		}
-		else if(other.tag == "enemy") {
-			isHit = true;
-		}
-		
-	}
+        } else if (other.tag == "enemy") {
+            isHit = true;
+        }
+
+    }
 }

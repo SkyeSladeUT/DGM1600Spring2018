@@ -51,7 +51,6 @@ public class Menus : MonoBehaviour {
 		animator.SetTrigger("StartGame");
 	}
 	public void EnterControlsMenu() {
-		animator.SetTrigger("Pause");
 		ControlsMenu.gameObject.SetActive(true);
 	}
 	public void ExitControlsMenu() {

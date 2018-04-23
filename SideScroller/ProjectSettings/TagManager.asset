@@ -8,6 +8,8 @@ TagManager:
   - gem
   - health
   - life
+  - shield
+  - enemy
   layers:
   - Default
   - TransparentFX
