@@ -27,7 +27,7 @@ public class Trigger : MonoBehaviour {
 			HealthBar.fillAmount -= PowerUpTransfer.PowerLevel;
 
 		}
-		if(HealthBar.fillAmount <= 0) {
+		else {
 			HealthBar.fillAmount = 1.0f;
 			obj.gameObject.transform.position = SpawnPoint;
 			player.MovePattern = NormalMove;

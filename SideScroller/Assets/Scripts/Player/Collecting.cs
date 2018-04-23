@@ -7,6 +7,7 @@ public class Collecting : MonoBehaviour {
 
 	public Player player;
 	public Text scoreText;
+	public Text LifeText;
 	public int winScore;
 	public Animator animator;
 	public ParticleSystem ParticleSystem;
@@ -37,6 +38,7 @@ public class Collecting : MonoBehaviour {
 				ParticleSystem.Emit(10);
 				Destroy(other.gameObject);
 				player.NumOfLives ++;
+				LifeText.text = "Lives: " + player.NumOfLives;
 				break;
 			case "health":
 				SFX.Play();
