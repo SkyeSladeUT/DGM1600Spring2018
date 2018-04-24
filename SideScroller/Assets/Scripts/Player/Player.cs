@@ -9,6 +9,7 @@ public class Player : ScriptableObject {
 	public int NumOfLives = 5;
 	public bool GameOver = false;
 	public bool GameWon = false;
+	public bool ShieldOn = false;
 
 	
 }
