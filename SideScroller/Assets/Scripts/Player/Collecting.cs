@@ -47,7 +47,7 @@ public class Collecting : MonoBehaviour {
                 break;
         }
         scoreText.text = "Score: " + player.Score;
-        if (player.Score == winScore) {
+        if (player.Score >= winScore) {
             player.GameWon = true;
             animator.SetTrigger ("ExitGame");
         }
