@@ -31,7 +31,7 @@ public class Trigger : MonoBehaviour {
             player.NumOfLives--;
             Lives.text = "Lives: " + player.NumOfLives;
         }
-        if (player.NumOfLives == 0) {
+        if (player.NumOfLives <= 0) {
             animator.SetTrigger ("ExitGame");
             player.GameOver = true;
         }
