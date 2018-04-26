@@ -15,6 +15,8 @@ public class Collecting : MonoBehaviour {
     private int ShieldPower;
     public Transform ShieldOutline;
     public Text ShieldCountDown;
+    private enum Collections {coin = 10, gem = 50, health = 10, life = 50, none = 0};
+    private Collections value;
 
     void Start () {
         player.Score = 0;
@@ -29,19 +31,20 @@ public class Collecting : MonoBehaviour {
             case "coin":
                 SFX.Play ();
                 ParticleSystem.Emit (10);
-                Destroy (other.gameObject);
-                player.Score += 10;
+                Destroy(other.gameObject);
+                value = Collections.coin;
                 break;
             case "gem":
                 SFX.Play ();
-				StartCoroutine("Fireworks");
-                Destroy (other.gameObject);
-                player.Score += 50;
+                StartCoroutine("Fireworks");
+                Destroy(other.gameObject);  
+                value = Collections.gem;
                 break;
             case "life":
                 SFX.Play ();
-                ParticleSystem.Emit (10);
-                Destroy (other.gameObject);
+                StartCoroutine("Fireworks");
+                Destroy(other.gameObject);
+                value = Collections.life;
                 player.NumOfLives++;
                 LifeText.text = "Lives: " + player.NumOfLives;
                 break;
@@ -49,17 +52,24 @@ public class Collecting : MonoBehaviour {
                 SFX.Play ();
                 ParticleSystem.Emit (10);
                 Destroy(other.gameObject);
+                value = Collections.health;
                 break;
             case "shield":
+                SFX.Play ();
+                ParticleSystem.Emit (10);
+                Destroy(other.gameObject);
+                value = Collections.none;
             	ShieldPower = 10;
                 player.ShieldOn = true;
-                Destroy(other.gameObject);
                 ShieldOutline.gameObject.SetActive(true);
 			    StartCoroutine ("Shield");
                 break;
             default:
+                value = Collections.none;
                 break;
         }
+
+        player.Score += (int)value;
         scoreText.text = "Score: " + player.Score;
         if (player.Score >= winScore) {
             player.GameWon = true;
