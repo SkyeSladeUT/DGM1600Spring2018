@@ -35,4 +35,5 @@ public class MoveCharacter : MonoBehaviour {
             FullCam.enabled = false;
         }
     }
+
 }

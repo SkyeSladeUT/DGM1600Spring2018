@@ -7,7 +7,7 @@ public class MovePattern : ScriptableObject {
     public float speed = 6.0F;
     public float jumpSpeed = 8.0F;
     public float gravity = 20.0F;
-    protected Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
     protected Vector3 rotateDirection;
     public InputBase InputX, InputZ, InputY;
     public InputBase InputRotateX, InputRotateY, InputRotateZ;
@@ -24,7 +24,6 @@ public class MovePattern : ScriptableObject {
 
             moveDirection = transform.TransformDirection (moveDirection);
             moveDirection *= speed;
-
             moveDirection.y = Jump.SetFloat () * jumpSpeed;
         }
 
@@ -33,6 +32,7 @@ public class MovePattern : ScriptableObject {
         moveDirection.y -= gravity * Time.deltaTime;
         //moves the character
         controller.Move (moveDirection * Time.deltaTime);
-    } 
+    }
+
 
 }

@@ -20,7 +20,11 @@ public class Key : MonoBehaviour {
 		}
 
 	}
-	private void OnTriggerEnter (Collider other) {
+	private void OnTriggerExit (Collider other) {
+		StartCoroutine ("ButtonPress");
+	}
+
+	IEnumerator ButtonPress() {
 		buttonNoise.Play();
 		if(isButtonActive)
 			animate.Play("On");
@@ -34,5 +38,6 @@ public class Key : MonoBehaviour {
 		}
 		button.CurrentButtonActive = !button.CurrentButtonActive;
 		isButtonActive = !isButtonActive;
+		yield return new WaitForSeconds(1.0f);
 	}
 }
