@@ -15,6 +15,8 @@ public class Key : MonoBehaviour {
 	private void Start () {
 		animate = gameObject.GetComponent<Animation> ();
 		buttonNoise = gameObject.GetComponent<AudioSource> ();
+		isButtonActive = false;
+		button.CurrentButtonActive = true;
 		foreach (var door in Door2) {
 			door.SetActive (false);
 		}
@@ -38,6 +40,6 @@ public class Key : MonoBehaviour {
 		}
 		button.CurrentButtonActive = !button.CurrentButtonActive;
 		isButtonActive = !isButtonActive;
-		yield return new WaitForSeconds(1.0f);
+		yield return new WaitForSeconds(2.0f);
 	}
 }

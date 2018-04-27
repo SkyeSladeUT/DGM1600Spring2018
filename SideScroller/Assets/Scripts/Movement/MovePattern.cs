@@ -24,7 +24,17 @@ public class MovePattern : ScriptableObject {
 
             moveDirection = transform.TransformDirection (moveDirection);
             moveDirection *= speed;
+
             moveDirection.y = Jump.SetFloat () * jumpSpeed;
+        }
+
+        else {
+            rotateDirection.Set (InputRotateX.SetFloat (), InputRotateY.SetFloat (), InputRotateZ.SetFloat ());
+            transform.Rotate (rotateDirection);
+
+            moveDirection.x = InputX.SetFloat () * speed;
+            moveDirection.z = InputZ.SetFloat () * speed;
+            moveDirection = transform.TransformDirection(moveDirection);
         }
 
         //Time.deltaTime makes it run in real time rather than every frame
@@ -33,6 +43,4 @@ public class MovePattern : ScriptableObject {
         //moves the character
         controller.Move (moveDirection * Time.deltaTime);
     }
-
-
 }

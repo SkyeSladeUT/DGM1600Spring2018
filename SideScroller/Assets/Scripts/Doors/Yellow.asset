@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db83922b13a80db48990206f68813278, type: 3}
   m_Name: Yellow
   m_EditorClassIdentifier: 
-  CurrentButtonActive: 1
+  CurrentButtonActive: 0
