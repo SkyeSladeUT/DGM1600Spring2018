@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\10802160\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_SideScroller.1283967742.00" t="ExcludeRecursive" />
+    <e p="C:\Users\10802160\Documents\DGM1600Spring2018\SideScroller" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="ChangeState.cs" t="Include" />
+          <e p="Doors" t="Include">
+            <e p="ButtonScript.cs" t="Include" />
+            <e p="Key.cs" t="Include" />
+          </e>
+          <e p="Enemies" t="Include">
+            <e p="BasicAI.cs" t="Include" />
+          </e>
+          <e p="Menus.cs" t="Include" />
+          <e p="Movement" t="Include">
+            <e p="BoolInput.cs" t="Include" />
+            <e p="FloatConstant.cs" t="Include" />
+            <e p="FloatInput.cs" t="Include" />
+            <e p="InputBase.cs" t="Include" />
+            <e p="MoveCharacter.cs" t="Include" />
+            <e p="MovePattern.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Collecting.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayParticle.cs" t="Include" />
+          </e>
+          <e p="PowerUp" t="Include">
+            <e p="PowerUp.cs" t="Include" />
+            <e p="Spike.cs" t="Include" />
+            <e p="Trigger.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SideScroller.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
